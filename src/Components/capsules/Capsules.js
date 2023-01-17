@@ -11,14 +11,17 @@ const Capsules = () =>{
           })
     return(
         
-      <div className=''>
+      <div className='table'>
         <table>
+        <thead>
                  <tr>
     <th>Serial</th>
     <th>Type</th>
     <th>Status</th>
     <th>ID</th>
   </tr>
+  </thead>
+  <tbody>
         {capsulesData.map((capsule,index)=>(
             
             <tr key={index}>
@@ -30,6 +33,7 @@ const Capsules = () =>{
             </tr>
            
         ))}
+        </tbody>
          </table>
       </div>
       

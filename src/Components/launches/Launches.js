@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const Launches = () =>{
-    const [capsulesData,setlaunchesData] = useState([]);
+    const [launchesData,setlaunchesData] = useState([]);
        useEffect(()=>{
         axios 
             .get('https://api.spacexdata.com/v4/launches')
@@ -12,25 +12,28 @@ const Launches = () =>{
           })
     return(
         
-      <div className=''>
+      <div className='table'>
         <table>
+        <thead>
                  <tr>
-    <th>Serial</th>
-    <th>Type</th>
-    <th>Status</th>
-    <th>ID</th>
+    <th>Name</th>
+    <th>Flight number</th>
+    <th>Date local</th>
   </tr>
-        {capsulesData.map((capsule,index)=>(
+  </thead>
+  <tbody>
+        {launchesData.map((launches,index)=>(
             
             <tr key={index}>
-                <td>{capsule.serial}</td>
-                <td>{capsule.type}</td>
-                <td>{capsule.status}</td>
-                <td>{capsule.id}</td>
+                <td>{launches.name}</td>
+                <td>{launches.flight_number}</td>
+                <td>{launches.date_local}</td>
+                <td>{launches.details}</td>
 
             </tr>
            
         ))}
+        </tbody>
          </table>
       </div>
       
