@@ -19,6 +19,7 @@ const Launches = () =>{
     <th>Name</th>
     <th>Flight number</th>
     <th>Date local</th>
+    <th>Détails</th>
   </tr>
   </thead>
   <tbody>
