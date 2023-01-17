@@ -12,6 +12,7 @@ const Capsules = () =>{
     return(
         
       <div className='table'>
+        <h2> Capsules</h2>
         <table>
         <thead>
                  <tr>

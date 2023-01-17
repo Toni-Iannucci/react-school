@@ -54,3 +54,13 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.table{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.table thead{
+  background-color: #cdb4db;
+}

@@ -13,6 +13,7 @@ const Launches = () =>{
     return(
         
       <div className='table'>
+         <h2> Launches</h2>
         <table>
         <thead>
                  <tr>
