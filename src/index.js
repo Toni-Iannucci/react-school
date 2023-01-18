@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Capsules from './Components/capsules/Capsules';
+import Launches from './Components/launches/Launches'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Capsules />
+    <Launches />
   </React.StrictMode>
 );
 
